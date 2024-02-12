@@ -147,8 +147,8 @@ const LoggedUserMenuMobile = ({ session }: { session: Session }) => {
             className="w-full border-b border-separate py-3"
             key={item.label}
           >
-            <Link href={item.href} key={item.label}>
-              <Label className="text-lg">{item.label}</Label>
+            <Link href={item.href} key={item.label} className="w-full">
+              <Label className="text-lg w-full">{item.label}</Label>
             </Link>
           </SheetClose>
         ))}
